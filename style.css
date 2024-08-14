@@ -17,6 +17,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
+
 }
 .loading{
   background-color: black;
@@ -29,6 +30,7 @@ min-height: 100vh;
   justify-content: center;
   align-items: center;
   width: 100%;
+
   
 }
 .link{

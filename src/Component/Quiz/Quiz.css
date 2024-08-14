@@ -92,15 +92,15 @@ font-family: Arial, Helvetica, sans-serif;
   @media only screen and (max-width: 850px){
 .quiz{
     gap: 1rem;
-    margin:0.6rem  1.7rem;
+    margin:0.6rem  2rem;
     font-size: 1rem;
-    padding: 1.7rem 1.5rem;
+    padding: 1.7rem 1.3rem;
     letter-spacing: 0.3px;
   }
  .question,.index,ul,.scroring,.next{
 font-size: 1.4rem;
 line-height: 1.2;
-letter-spacing: 1px;
+letter-spacing:0.6px ;
 }
 ul li{
 margin: 1rem 0;
@@ -108,11 +108,30 @@ margin: 1rem 0;
 .question-score{
   display: flex;
   flex-direction: column;
-  gap:2rem;
+  gap:1rem;
 }
 .scroring{
 letter-spacing: 3px;
 }
+.question{
+  padding: 0;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .quiz{
+    gap: 1rem;
+    margin:0.6rem  1.7rem;
+    font-size: 0.5rem;
+    padding: 1.7rem 1.3rem;
+    letter-spacing: 0.3px;
+  }
+  .question,.index,ul,.scroring,.next{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    letter-spacing:0.6px ;
+    }
 }
 
   
