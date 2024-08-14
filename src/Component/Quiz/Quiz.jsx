@@ -61,7 +61,7 @@ const Quiz = () => {
       (<Scoreboard Score={score} Totalscore={5*data.length}  />) :
       (<section className='quiz'>
        
-        <div className='flex'>
+        <div className='flex question-score'>
            <h2 >Question  {index+1}/ {data.length}</h2>
            <h2 className='scroring'> Score:{score}/{data.length*5}</h2> 
         </div>

@@ -93,6 +93,7 @@ font-family: Arial, Helvetica, sans-serif;
 .quiz{
     gap: 1rem;
     margin:0.6rem  1.7rem;
+    margin-bottom: 40px/10%;
     font-size: 1rem;
     padding: 1.7rem 1.5rem;
     letter-spacing: 0.3px;
@@ -105,8 +106,14 @@ letter-spacing: 1px;
 ul li{
 margin: 1rem 0;
 }
-
-
+.question-score{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.scroring{
+letter-spacing: 3px;
+}
 }
 
   
