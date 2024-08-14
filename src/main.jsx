@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode,Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Start from './Component/Start/Start.jsx';
@@ -10,8 +10,12 @@ const appRouter=createBrowserRouter([
 
   {
     path:'/',
-    element:<App/>,
-
+    
+    element:(
+<Suspense fallback={<div>...loading</div>}>
+    <App/>
+  </Suspense>
+    ),
     children:[
       {
         path:'/',
