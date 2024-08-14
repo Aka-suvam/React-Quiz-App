@@ -1,0 +1,20 @@
+.timer{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap:1.4rem;
+}
+.timer-icon{
+    color: hotpink;
+    font-size: 3rem;
+    
+}
+.timer-string{
+    color: hotpink;
+}
+
+  @media only screen and (max-width: 751px){
+    .timer-icon{
+        font-size: 1.6rem;
+      }
+}

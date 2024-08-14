@@ -1,0 +1,134 @@
+
+.scoreboard{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1147;
+    max-width: 40rem;
+    border-radius: 1rem;
+    padding: 0.2rem 3.5rem;
+
+    
+}
+.result{
+  font-family: "Bree Serif", serif;
+    font-weight: 1000;
+    font-style: normal;
+    color: orangered;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.svg{
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+.score{
+  font-family: "Verdana", cursive, sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  color: aqua;
+
+}
+
+.try{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 0.4rem 0.2rem ;
+}
+.circularprogess{
+  width: 7rem;
+}
+/* react-circular-progressbar styles
+ * All of the styles in this file are configurable!
+ */
+
+ .CircularProgressbar {
+    /*
+     * This fixes an issue where the CircularProgressbar svg has
+     * 0 width inside a "display: flex" container, and thus not visible.
+     */
+    width: 100%;
+    /*
+     * This fixes a centering issue with CircularProgressbarWithChildren:
+     * https://github.com/kevinsqi/react-circular-progressbar/issues/94
+     */
+    vertical-align: middle;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-path {
+    stroke: #CA1A95;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease 0s;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-trail {
+    stroke: #241A39;
+    /* Used when trail is not full diameter, i.e. when props.circleRatio is set */
+    stroke-linecap: round;
+  }
+  
+  .CircularProgressbar .CircularProgressbar-text {
+    fill: white;
+    font-size: 30px;
+    font-weight: 900;
+    /*dominant-baseline: middle;*/
+    text-anchor: middle;
+    
+  
+  }
+  
+  .CircularProgressbar .CircularProgressbar-background {
+    fill: #d6d6d6;
+  }
+  
+  /*
+   * Sample background styles. Use these with e.g.:
+   *
+   *   <CircularProgressbar
+   *     className="CircularProgressbar-inverted"
+   *     background
+   *     percentage={50}
+   *   />
+   */
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+    fill: #3e98c7;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+    fill: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+    stroke: #fff;
+  }
+  
+  .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+    stroke: transparent;
+  }
+
+
+  @media only screen and (max-width: 751px){
+
+.scoreboard{
+  margin: 4rem;
+  padding: 1rem;
+  text-align: center;
+  }
+.result,.score{
+  font-size: 1.4rem;
+}
+.circularprogess {
+width: 4rem;
+padding: 0.2rem;
+}
+.CircularProgressbar-text{
+  font-size: 1rem;
+
+}
+.try{
+  font-size: 1rem;
+  padding: 0.3rem 0.4rem;
+}
+  }
