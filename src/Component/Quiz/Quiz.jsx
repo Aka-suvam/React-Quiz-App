@@ -10,6 +10,7 @@ const Quiz = () => {
   const [lock,setLock]=useState(false);
   const [score,setScore]=useState(0);
   const [quizOver, setQuizOver] = useState(false);
+  
 
 
   let option1=useRef(null);
@@ -53,6 +54,8 @@ const Quiz = () => {
     setQuestion(data[index]);
   },[index]);
 
+  
+
   return (
     quizOver || index >= data.length ? 
       (<Scoreboard Score={score} Totalscore={5*data.length}  />) :
@@ -71,7 +74,7 @@ const Quiz = () => {
         </ul>
         <div className='flex'>
         <Timer   onTimeUp={handleTimeUp}/> 
-        {lock ?(<button className='next' onClick={handleNext}>Next</button>):(null)}
+        {lock ?(<button className='next' onClick={handleNext}>{index<data.length-1?'Next':'Finish'}</button>):(null)}
        
        </div>
       </section>)

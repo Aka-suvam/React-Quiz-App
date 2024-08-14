@@ -3,6 +3,8 @@ import { data } from "../../ulits/data.js";
 import './Start.css';
 
 const Start = () => {
+  
+
   return (
     <div className='start'>
       <h2 className="start-heading">Welcome to The React Quiz!</h2>

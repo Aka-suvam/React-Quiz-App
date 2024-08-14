@@ -17,7 +17,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh
-
+}
+.loading{
+  background-color: black;
+  font-size: 10rem;
+  color: orangered;
 }
 .app {
   display: flex;
@@ -29,6 +33,12 @@ min-height: 100vh
 }
 .link{
   text-decoration: none;
+}
+@media only screen and (max-width: 850px){
+
+  .loading{
+    font-size: 9vw;
+  }
 }
 
 
